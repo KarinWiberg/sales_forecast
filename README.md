@@ -43,7 +43,7 @@ To predict the number of customers and the sales figures for the time period tha
 - Generated visualizations are in `visuals`.
 
 # Reports
-- `sales_forecast_report.ipynb` & `sales_forecast_report.html` is the development report
+- `sales_forecast_report.ipynb` is the development report
 - The report is also presented as a slideshow in `sales_forecast_report.slides.html`
 
 # Requirements
