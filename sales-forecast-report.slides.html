@@ -14819,11 +14819,11 @@ div.jp-OutputPrompt {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Usefulness">Usefulness<a class="anchor-link" href="#Usefulness">&#182;</a></h3><p><strong>XGBRegressor for n_cust</strong><br>
-Average n_cust: 773.3 &amp; average MAE: 173.21 -&gt; 22.4% error 
+Average n_cust: 773.3 &amp; average MAE: 173.21 -&gt; 22.4% error<br>
 The prediction has less than average error for 677 stores<br>
 The prediction has higher than average error for 332 stores</p>
 <p><strong>XGBRegressor for revenue</strong>
-Average n_cust: 7048.17 &amp; average MAE: 1529.29 -&gt; 22.4% error
+Average n_cust: 7048.17 &amp; average MAE: 1529.29 -&gt; 21.7% error<br>
 The prediction has less than average error for 636 stores
 The prediction has higher than average error for 373 stores</p>
 
@@ -14831,8 +14831,7 @@ The prediction has higher than average error for 373 stores</p>
 </div><div class="fragment">
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As additional output .csv-files are created for decision making of which stores the model is useful for. See below for n_cust and revenue.</p>
-
+<h1 id="As-additional-output-.csv-files-are-created-for-decision-making-of-which-stores-the-model-is-useful-for.-See-below-for-n_cust-and-revenue.">As additional output .csv-files are created for decision making of which stores the model is useful for. See below for n_cust and revenue.<a class="anchor-link" href="#As-additional-output-.csv-files-are-created-for-decision-making-of-which-stores-the-model-is-useful-for.-See-below-for-n_cust-and-revenue.">&#182;</a></h1>
 </div>
 </div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -15026,13 +15025,14 @@ Yes, we can.</p>
 <h1 id="Future-Suggestions">Future Suggestions<a class="anchor-link" href="#Future-Suggestions">&#182;</a></h1><ul>
 <li>Improve model performance: <ul>
 <li>Investigate the cause of the outliers</li>
-<li>Investigate skewness of the response variables</li>
+<li>Investigate skewness of the response variables (minor)</li>
 <li>Add public holidays as a date-feature</li>
 <li>Investgate feature selection based on correlation coefficients (feature selection by XGBoost feature importance decreased performance).</li>
 <li>Cross Validation with stratified splitted data</li>
 </ul>
 </li>
 <li>Use MAPE as evaluation metric for easier interpretation and compare with current manual predictability</li>
+<li>Optimize hyperparameters with TPOT or Hyper-Opt (depending on the nr of features)</li>
 <li>Create a pipeline for production</li>
 <li>Track the model tests and the performance with a ML-tracking tool such as MLflow</li>
 </ul>
